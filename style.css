@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f6f8fb;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #0052D4, #4364F7, #6FB1FC);
+    color: white;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .poster {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .poster:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .poster img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .quote {
+    padding: 1rem;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    color: #555;
+    min-height: 60px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .quote {
+      font-size: 0.95rem;
+    }
+  }
+  
